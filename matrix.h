@@ -57,8 +57,40 @@ class Matrix {
 
   const double & at(uint row, uint col) const;
 
+  Matrix operator+(double s) const;
+
+  Matrix operator+(const Matrix & m) const;
+
+  Matrix operator-(double s) const;
+
+  Matrix operator-(const Matrix & m) const;
+
+  Matrix operator*(double s) const;
+
+  Matrix operator*(const Matrix & m) const;
+
+  Matrix operator/(double s) const;
+
+  Matrix operator=(const Matrix & m);
+
+  Matrix operator=(const i_list & list);
+
+  Matrix operator-() const;
+
+  double & operator()(uint row, uint col);
+
+  const double & operator()(uint row, uint col) const;
+
 }; // Matrix
 
+Matrix operator+(double s, Matrix & m);
 
+Matrix operator-(double s, Matrix & m);
+
+Matrix operator*(double s, Matrix & m);
+
+Matrix operator/(double s, Matrix & m);
+
+ostream & operator<<(ostream & out, const Matrix & m);
 
 #endif
