@@ -22,33 +22,32 @@ int main() {
   Matrix c(x);
 
   //Destructor test
-  Matrix* mPtr = new Matrix(3, 3);
-  delete mPtr;
-
+   
+  
   //Add scalar
   Matrix d = x.add(10);
-
+  
   //Add matrix object
   Matrix e = x.add(y);
-
+  
   //Subtract scalar
   Matrix f = y.subtract(10);
-
+  
   //Subtract matrix object
   Matrix g = y.subtract(z);
-
+  
   //Multiply scalar
   Matrix h = y.multiply(2);
-
+  
   //Multiply matrix object
   Matrix i = x.multiply(z);
-
+  
   //Divide scalar
   Matrix j = y.divide(2);
-
+  
   //Transpose
   Matrix k = x.t();
-
+  
   //numRows() test
   cout << a.numRows() << endl;
   cout << x.numRows() << endl;  
